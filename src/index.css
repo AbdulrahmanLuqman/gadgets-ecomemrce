@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.newProductBg:hover .actions{
+  right: 4px;
+  transition: all ease-in-out 400ms;
+}
+
+.newProductBg:hover .actionButton{
+  position: static;
+  transition: all ease-in-out 500ms;
+  /* color: black; */
+}
