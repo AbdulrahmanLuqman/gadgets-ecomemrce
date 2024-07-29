@@ -1,6 +1,6 @@
 import { FaEdit } from "react-icons/fa"
 import { newProducts } from "../data/newProducts"
-import { FaCodeCompare, FaStar } from "react-icons/fa6"
+import { FaTrash } from "react-icons/fa6"
 const NewProducts = () => {
   return (
     <div className="space-y-4 lg:px-16 md:px-10 px-5">
@@ -15,12 +15,10 @@ const NewProducts = () => {
                         <p className="text-sm font-semibold">{newProduct.title}</p>
                         <p className="text-sm font-semibold text-blue-700 text-center">{newProduct.productName}</p>
                         <p className="font-semibold">{newProduct.price}</p>
-                        <button className="actionButton absolute top-[-200px] w-full border-2 border-[#000] rounded-2xl px-4 py-[3px] hover:bg-[#000] hover:text-white">Add to cart</button>
 
                         <div className="actions absolute top-2 right-[-50px] transition-all duration-100 space-y-2">
                             <div title="Edit" className="bg-gray-200 p-2 cursor-pointer rounded-[50%]"><FaEdit /></div>
-                            <div title="Add to WishList" className="bg-gray-200 p-2 cursor-pointer rounded-[50%]"><FaStar /></div>
-                            <div title="Compare" className="bg-gray-200 p-2 cursor-pointer rounded-[50%]"><FaCodeCompare /></div>
+                            <div title="Delete" className="bg-gray-200 p-2 cursor-pointer rounded-[50%]"><FaTrash /></div>
                         </div>
                     </div>
                 ))
